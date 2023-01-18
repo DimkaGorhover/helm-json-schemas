@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://dimkagorhover.github.io/helm-json-schemas/helm/Probes.json",
+  "type": "object",
+  "properties": {
+    "startupProbe": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/helm/Probe.json"
+    },
+    "livenessProbe": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/helm/Probe.json"
+    },
+    "readinessProbe": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/helm/Probe.json"
+    }
+  }
+}

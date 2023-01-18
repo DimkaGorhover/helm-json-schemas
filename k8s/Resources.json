@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://dimkagorhover.github.io/helm-json-schemas/k8s/Resources.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "requests",
+    "limits"
+  ],
+  "properties": {
+    "requests": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/k8s/ResourcesItem.json"
+    },
+    "limits": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/k8s/ResourcesItem.json"
+    }
+  }
+}

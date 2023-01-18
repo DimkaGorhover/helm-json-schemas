@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://dimkagorhover.github.io/helm-json-schemas/helm/NodeGroup.json",
+  "type": "string",
+  "enum": [
+    "pawk",
+    "padb",
+    "pakf",
+    "padn",
+    "pamr",
+    "pann"
+  ]
+}

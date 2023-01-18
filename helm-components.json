@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://dimkagorhover.github.io/helm-json-schemas/helm-components.json",
+  "title": "Json Schema for Helm Components",
+  "definitions": {
+    "TopologySpreadConstraints": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/k8s/TopologySpreadConstraints.json"
+    },
+    "Affinity": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/k8s/Affinity.json"
+    },
+    "Duration": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/units/Duration.json"
+    },
+    "Labels": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/k8s/Labels.json"
+    },
+    "Annotations": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/k8s/Annotations.json"
+    },
+    "Image": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/helm/Image.json"
+    },
+    "Probe": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/helm/Probe.json"
+    },
+    "Probes": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/helm/Probes.json"
+    },
+    "Resources": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/k8s/Resources.json"
+    },
+    "ResourcesItem": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/k8s/ResourcesItem.json"
+    },
+    "ResourcesItemCPU": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/units/CPU.json"
+    },
+    "ResourcesItemMemory": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/units/Memory.json"
+    },
+    "Ingress": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/helm/Ingress.json"
+    },
+    "PodDisruptionBudget": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/helm/PodDisruptionBudget.json"
+    },
+    "ServiceMonitor": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/helm/ServiceMonitor.json"
+    },
+    "DynamicProperty": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/helm/DynamicProperty.json"
+    },
+    "LoadBalancerIP": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/units/LoadBalancerIP.json"
+    },
+    "Global": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/helm/Global.json"
+    }
+  }
+}

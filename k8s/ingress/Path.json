@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://dimkagorhover.github.io/helm-json-schemas/k8s/ingress/Path.json",
+  "type": "string",
+  "default": "/",
+  "examples": [
+    "/",
+    "/metrics",
+    "/api"
+  ],
+  "anyOf": [
+    {
+      "type": "string"
+    },
+    {
+      "enum": [
+        "/",
+        "/metrics",
+        "/api"
+      ]
+    }
+  ]
+}

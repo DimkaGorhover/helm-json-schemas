@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://dimkagorhover.github.io/helm-json-schemas/units/Duration.json",
+  "type": "string",
+  "pattern": "^[1-9]\\d*[smhd]$",
+  "examples": [
+    "30s",
+    "30m"
+  ]
+}

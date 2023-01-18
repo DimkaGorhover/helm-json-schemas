@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://dimkagorhover.github.io/helm-json-schemas/helm/AffinityPresetType.json",
+  "type": "string",
+  "enum": [
+    "soft",
+    "hard"
+  ],
+  "default": "soft"
+}

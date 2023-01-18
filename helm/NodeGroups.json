@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://dimkagorhover.github.io/helm-json-schemas/helm/NodeGroups.json",
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "$ref": "https://dimkagorhover.github.io/helm-json-schemas/helm/NodeGroup.json"
+  }
+}

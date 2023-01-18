@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://dimkagorhover.github.io/helm-json-schemas/units/CPU.json",
+  "anyOf": [
+    {
+      "type": "number",
+      "examples": [
+        0.1,
+        1,
+        2,
+        2.5
+      ]
+    },
+    {
+      "type": "string",
+      "examples": [
+        "100m"
+      ]
+    }
+  ]
+}

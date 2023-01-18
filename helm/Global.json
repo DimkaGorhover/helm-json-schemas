@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://dimkagorhover.github.io/helm-json-schemas/helm/Global.json",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "imagePullSecrets": {
+      "type": "array",
+      "uniqueItems": false,
+      "items": {
+        "type": "string"
+      }
+    },
+    "revisionHistoryLimit": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 10
+    },
+    "clusterDomain": {
+      "type": "string",
+      "default": "cluster.local"
+    }
+  }
+}

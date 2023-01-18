@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://dimkagorhover.github.io/helm-json-schemas/helm/Ingress.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "enabled"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "enabled": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "hostname",
+          "path",
+          "pathType"
+        ]
+      }
+    }
+  ],
+  "properties": {
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "labels": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/k8s/Labels.json"
+    },
+    "annotations": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/k8s/ingress/Annotations.json"
+    },
+    "ingressClassName": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/k8s/ingress/ClassName.json"
+    },
+    "hostname": {
+      "type": "string"
+    },
+    "path": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/k8s/ingress/Path.json"
+    },
+    "pathType": {
+      "$ref": "https://dimkagorhover.github.io/helm-json-schemas/k8s/ingress/PathPrefix.json"
+    },
+    "tlsSecretName": {
+      "type": "string"
+    }
+  }
+}
